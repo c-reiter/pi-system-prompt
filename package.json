@@ -1,0 +1,42 @@
+{
+  "name": "pi-system-prompt",
+  "version": "0.1.0",
+  "description": "Pi extension for switching system prompts via /prompt command. Load prompt files from ~/.pi/agent/prompts/ or .pi/prompts/, display the active prompt in the footer, and automatically preserve dynamic sections (skills, context, date, cwd).",
+  "type": "module",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "coding-agent",
+    "extensions",
+    "system-prompt",
+    "prompt-management",
+    "prompt-switching",
+    "custom-prompt"
+  ],
+  "pi": {
+    "extensions": ["./extensions/index.ts"],
+    "prompts": ["./prompts"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-reiter/pi-system-prompt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/c-reiter/pi-system-prompt/issues"
+  },
+  "homepage": "https://github.com/c-reiter/pi-system-prompt#readme",
+  "license": "MIT",
+  "author": "Claudio Reiter",
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "files": [
+    "extensions/",
+    "prompts/",
+    "README.md",
+    "LICENSE"
+  ]
+}

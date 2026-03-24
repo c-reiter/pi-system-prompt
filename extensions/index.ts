@@ -95,6 +95,7 @@ export default function (pi: ExtensionAPI) {
 
 	function extractDynamicTail(builtPrompt: string): string {
 		const markers = [
+			"\nPi documentation (read only when the user asks about pi itself",
 			"\n\n# Project Context\n",
 			"\n\nThe following skills provide specialized instructions",
 			"\nCurrent date: ",
